@@ -38,7 +38,7 @@ pmode:
     mov esp, ebp
 
     [EXTERN _core]
-    call _core                      ; call the core
+    call _core                      ; call the core. Yea boy!! Os loaded up without a file system.
 
 halt:                          
     cli
