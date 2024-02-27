@@ -1,0 +1,56 @@
+;code for a little text mode menu
+ 
+ push word 0                            
+	call _set_text_mode                     ; Set the text mode to a good display mode size
+	add sp, 2
+
+	call move_cursor	
+
+	call draw_main_menu
+	call draw_sub_menu
+
+	call set_text_pos_01
+	mov ah, 0x09 ; Print string function
+    mov bh, 0x00 ; Page number
+	mov cx, 20
+    mov bl, 00000110b ; Text attribute
+    int 0x10 ; BIOS interrupt
+	mov si, load_msg_01                     
+	call _write
+	call _neli
+
+	call set_text_pos_02
+	mov ah, 0x09 ; Print string function
+    mov bh, 0x00 ; Page number
+	mov cx, 13
+    mov bl, 00000110b ; Text attribute
+    int 0x10 ; BIOS interrupt
+	mov si, load_msg_02                     
+	call _write
+	call _neli
+
+
+	call set_text_pos_03
+	mov ah, 0x09 ; Print string function
+    mov bh, 0x00 ; Page number
+	mov cx, 30
+    mov bl, 00000110b ; Text attribute
+    int 0x10 ; BIOS interrupt
+	mov si, load_msg_03                     
+	call _write
+	call _neli
+
+	call set_text_pos_04
+	mov ah, 0x09 ; Print string function
+    mov bh, 0x00 ; Page number
+	mov cx, 9
+    mov bl, 01110000b ; Text attribute
+    int 0x10 ; BIOS interrupt
+	mov si, load_msg_04
+	call _write
+	call _neli
+
+load_msg_01  db " Rootling Bootloader", 0
+load_msg_02  db " Version 1.00", 0
+load_msg_03  db " progress bar: > > > > > > > >", 0
+load_msg_04  db " Options:", 0
