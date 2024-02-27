@@ -11,4 +11,4 @@ _set_gmode_system:
     ret             ; Return
 
 ;need to add in the proper labels need to set multiple video modes instead of hard coding it and need to add the proper label to get infomation from vesa 
-;so we can use that data in our core and c.
+;so we can use that data in our core and c. We have some defines in c that we need to use to be able to get the mode size from here at some point.
