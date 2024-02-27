@@ -10,10 +10,9 @@ osload:  jmp switch_pmode
 %include "tmode_system.asm"
 
 switch_pmode:
-
-	call enable_gate	
-	;call _set_gmode_system
-	call _set_tmode_system	
+    call enable_gate
+    call _set_gmode_system
+    ;call _set_tmode_system	
 
     cli
 	lgdt [selector_ptr]
