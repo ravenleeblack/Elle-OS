@@ -11,17 +11,17 @@ osload:  jmp switch_pmode
 
 switch_pmode:
     call enable_gate
-    call _set_gmode_system
-    ;call _set_tmode_system	
+    call _set_gmode_system           ; set vesa graphics mode so we can use it frame buffer
+    ;call _set_tmode_system	     ; set text mode
 
     cli
-	lgdt [selector_ptr]
+    lgdt [selector_ptr]
 
-    mov eax, cr0             ; get the status word
-    or eax, 1                ; turn on the P bit
-    mov cr0, eax             ; store the status word
-	
-	jmp core_mode_code_seg:pmode
+    mov eax, cr0                     ; get the status word
+    or eax, 1                        ; turn on the P bit
+    mov cr0, eax                     ; store the status word
+
+    jmp core_mode_code_seg:pmode     ; jmp to pmode
 
 [BITS 32]
 pmode:
@@ -30,20 +30,19 @@ pmode:
     mov ss, ax
     mov es, ax
 
-	mov ax, 0
+    mov ax, 0
     mov fs, ax
     mov gs, ax
-
 
     mov ebp, 0xfff0
     mov esp, ebp
 
     [EXTERN _core]
-    call _core
+    call _core                      ; call the core
 
-halt:
+halt:                          
     cli
-	hlt
+    hlt
 
 %include "setup_gdt.inc"
 %include "setup_isr.inc"
