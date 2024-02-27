@@ -10,7 +10,6 @@ show_cursor:
 	popa
 	ret
 
-
 hide_cursor:
 	pusha
 	mov ch, 32
