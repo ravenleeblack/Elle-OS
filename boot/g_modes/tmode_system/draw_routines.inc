@@ -12,17 +12,14 @@ draw_main_menu:        ; draw the main option window
     mov cx, 78         ; Set CX register to 1, indicating the number of characters to display
     mov al, ' '        ; Set AL register to the character ' ' (a space)
     mov bl, 01100110b  ; Set BL register to 00110000b for a white block on a black background
-	int 10h 
-
+    int 10h 
 .draw_block_loop:
     mov ah, 02h        ; Set cursor position function
-	inc dh
-	int 10h 
-
+    inc dh
+    int 10h 
     cmp dh, 47
     jge .block_done
     jmp .reloop_column
-
 .block_done:
     popa
     ret
@@ -34,23 +31,19 @@ draw_sub_menu:
     mov dh, 4           ; Row (0-based) - Adjusted to a visible position
     mov dl, 2           ; Column (0-based) - Adjusted to a visible position
     int 10h 
-
 .reloop_column:
     mov ah, 09h         ; Set AH register to 09h to write characters to the screen
     mov cx, 76          ; Set CX register to 1, indicating the number of characters to display
     mov al, ' '         ; Set AL register to the character ' ' (a space)
     mov bl, 01110111b   ; Set BL register to 00110000b for a white block on a black background
     int 10h 
-
 .draw_block_loop:
     mov ah, 02h         ; Set cursor position function
     inc dh
     int 10h 
-
     cmp dh, 46
     jge .block_done
     jmp .reloop_column
-
 .block_done:
     popa
     ret
