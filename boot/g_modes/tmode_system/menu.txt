@@ -1,4 +1,4 @@
-;code for a little text mode menu
+;code for a little text mode menu. just add into osload before jmp to pmode. Still a working progress for a bios menu. not fully done yet. Currently will show instead of core graphics unless you use a clear screen to reset screen before settin up core graphics.
  
  push word 0                            
 	call _set_text_mode                     ; Set the text mode to a good display mode size
