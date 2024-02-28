@@ -25,7 +25,7 @@ visopsys: https://visopsys.org/. def way too encapsulated but the system is nice
 soso: https://github.com/ozkl/soso.
 
 
-Feel free to reach out. Any help or contributions would be much appreciated, not only in code, but email as well.
+Feel free to reach out. Any help, explanations, or contributions would be much appreciated, not only in code, but in email as well.
 
 
 
