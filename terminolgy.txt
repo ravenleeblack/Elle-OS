@@ -25,6 +25,14 @@ using the standard memory layout, and now using the extended memory layout.
 sadule - (sa-dule) - standard address module. A sadule replaces the word page and has saml addresses. sadule directory, sadule_index, sadule, saml addresses
 addule - (ad-dule) - address module. replaces frames in phyical memory. So we have addules that contain raml addresses.
 
+
+When it comes to ui the desktop is a main frame and a program window is a sub frame. All other ui elements are elements.
+main_frame - The main frame is the desktop. It has an empty or nulled parent. If support for multiple monitors later or virtual desktops then they become siblings to the main frame and not children.
+subframe -  A program window. It is also a child to the main frame or the main frames sibling/s.
+elements - elements can be both children of the main frame and the sub frame.
+
+In elle we have a frame manager. The frame manager manages the frames and its child elements along with the code behind and input sequences of those elements.
+
 Archive Filing System (AFS) - an old library like filing system of cards. The roots are archives, directorys are catalogs, and everything else 
 is a card. We would say that a file is a file card, binary is a module card, and devices are device cards that can be accessed.
 
@@ -48,3 +56,4 @@ binary                          module card
 device                          device card
 
 
+In a server/client enviroment: Its typically a chained enviroment where the real server is a server and the your os is the client but also a server itself to user mode which is a client. Under this circunstance we would say that we have a server for the server, a subserver for your os, and user mode is a client. This will help clarify which part of the chain we are talking about when we have a server, sub-server, client work flow. The only change here is we are creating a new word for the middle so we are not directly saying either server or client for the middle when trying to explain something in the work flow of everything. This helps eliminate confusion and we still know that the middle can be or is either a server or a client.
