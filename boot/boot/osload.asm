@@ -5,7 +5,6 @@ global osload
 
 osload:  jmp switch_pmode
 
-%include "rootling.inc"
 %include "gmode_system.asm"
 %include "tmode_system.asm"
 
