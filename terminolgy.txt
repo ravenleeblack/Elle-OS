@@ -43,13 +43,15 @@ or displayed in that particular monitor.
 subframe -  A program window. It is also a child to the main frame or any one of the main frames sibling/s.
 elements - elements can be either children to the main frame or to the sub frame.
 
-In elle we have a frame manager. The frame manager manages the frames and its child elements along with the code behind and input sequences of those elements.
+In elle we have a frame manager. The frame manager manages the frames and its child elements along with the code behind and input sequences of 
+those elements.
 
-Archive Filing System (AFS) - an old library like filing system of cards. The roots are archives, directorys that are not roots are catalogs, and everything
-else is a card. We would say that a file is a file card, binary is a module card, and devices are device cards that can be accessed. Every card has a index_tag instead of a fd or handle. Every card has a label_index_tag which consists of card traits not attributes.
+Archive Filing System (AFS) - an old library like filing system of cards. The roots are archives, directorys that are not roots are catalogs, 
+and everything else is a card. We would say that a file is a file card, binary is a module card, and devices are device cards that can be 
+accessed. Every card has a index_tag instead of a fd or handle. Every card has a label_index_tag which consists of card traits not attributes.
 
-If we have to get inspiration and ideas from the other os's then a more linux like filing system and terminal would be best for the afs and the terminal 
-then/and a more windows like gui system for the graphics side of things without all the heavy encapsulation. 
+If we have to get inspiration and ideas from the other os's then a more linux like filing system and terminal would be best for the afs and the 
+terminal then/and a more windows like gui system for the graphics side of things without all the heavy encapsulation. 
 
 I would actually like to figure out how to make my own filing system so that I can use .elm files. (Executable Linked Modules). Where all lib and 
 binary file cards are .mod file cards until they get linked into an .elm file card. The .elm module card is the executable program.
