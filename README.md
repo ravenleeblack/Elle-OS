@@ -15,7 +15,7 @@ Since I dont know how to set the make file up for folder switching, you will hav
 
 ## IMPLEMENTED 
 - Bootloader loads the core without relying on a file system.
-- Switch to graphical mode.
+- Switches to graphical mode.
 - A few framebuffer functions to write a mark, strand, or hex to screen using pixels.
 
 ## TODO
