@@ -87,3 +87,26 @@ through a means of card, then it would be called a soft dock connection. Where w
 connect to the proper dock for input and output. Furthurmore we treat all buses the same way. Where a connection to and from is a dock and it is just an 
 interface hub to something else.
 
+At some point I will port my language Illeshian and compiler, if Elle ever gets to that point, so these are terms that come from that:
+mark - char 
+strand - string - a strand is a sequence of marks or chars
+num - int - A whole number
+deci - a float - a decimaled number
+decii - double
+deciii - double double
+deciv - 4 doubles
+table - array
+pare - bool
+tripare - new kind of bool
+check - if
+else - else
+compare - switch
+line - case
+other - default
+loop - while
+set - for loop - a set loop, sets a numbered amount of iterations or cycles, based on condition.
+log - struct - stands for a datalog
+list - enum
+manager - first class function - no relation to oop classes only a heirachy reference to functions.
+function - second class function - no relation to oop classes only a heirachy reference to functions.
+call - calls a manager or function
