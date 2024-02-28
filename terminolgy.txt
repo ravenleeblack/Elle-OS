@@ -1,5 +1,5 @@
 In Elle I want to rename some things. I told you this was an unusal os. Whats the point of building an os if you cant change things to the 
-way you want and understand.
+way you want and understand. This area is for explaining some things, as well as, present ideas or understanding.
 
 core - replaces the name kernel. This isnt popcorn.
 event - replaces process - A program in execution.
