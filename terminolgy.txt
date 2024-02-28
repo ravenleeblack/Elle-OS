@@ -64,4 +64,8 @@ change here is we are creating a new word for the middle so we are not directly 
 something in the work flow of everything. This helps eliminate confusion and we still know that the middle can be or is a server or a client.
 
 
+When it comes to hardware abstraction we look at it like a distribution hub or building where one side takes in importing/input and the other side sends 
+out exporting/output. We connect up to docks, we send info into a dock and send info out thorugh the dock/s. 
 
+Since we are using the word dock here, that means we can no longer use it for a ui docking system, so will have to come up with a new name like port 
+system for ui or something along those lines.
