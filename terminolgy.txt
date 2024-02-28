@@ -7,7 +7,8 @@ thread/s - remains same - A thread begins or starts an event into execution and 
 
 sequence/s - replaces the old event handling for mouse and keyboard. We would say mouse or keyboard input sequence/s or sequence handling. I had 
 to change the name of this since event/s replace processes and it would be confusing as a whole if I left event for mouse and keyboard handling.
-The main purpose of renaming alot of things in the os is to provide a better understanding of the os in a new way as a whole. 
+The main purpose of renaming alot of things in the os is to provide a better understanding of the os in a new way as a whole. Or try to provide a
+better and simpler understanding at least.
 
 lock_gate - replaces mutexes if used
 guide/s - replace semaphores if used
