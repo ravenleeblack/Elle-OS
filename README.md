@@ -7,9 +7,8 @@ Elle is a 32-bit x86 Operating System. I am not looking to make a windows or lin
 Currently its does nothing but show some vesa graphics on the screen. I wasnt really trying to be the graphics first guy but it turned out to be easier then alot of other things.
 So I wrote some functions, to at least, start testing stuff and start using the framebuffer without vesa's functions.
 
-The bootloader currently loads the core up without being dependent on a file system to do it. The interrupt system is shaky but I think I am close to getting the keyboard working. Which is needed to start a terminal. Since there is graphics involved I suppose thats a good place to start. A nice graphical terminal. 
 
-Since I dont know how to set the make file up for folder switching, you will have to pull all the files into the main folder to use, or rewrite the make file. Ill get there.
+Currently have to pull all the files into the main folder to use the makfile since I dont know how to make it switch folders, or you can rewrite the make file.
 
 
 
