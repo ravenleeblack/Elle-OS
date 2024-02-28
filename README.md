@@ -17,6 +17,8 @@ Since I dont know how to set the make file up for folder switching, you will hav
 - Bootloader loads the core without relying on a file system.
 - Switches to graphical mode.
 - A few framebuffer functions to write a mark, strand, or hex to screen using pixels.
+- A few functions to draw elements onto screen using pixels.
+- A few functions to color foreground and background of text, elements.
 
 ## TODO
 - Multitasking with events and threads
