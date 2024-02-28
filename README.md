@@ -14,9 +14,15 @@ The bootloader currently loads the core up without being dependent on a file sys
 
 
 current os inspirations:  
+```
 base kernel: https://github.com/dthain/basekernel. It has some clean code in most parts and a really nice system call system even doe its overly encapsulated on everything and assembly is in gas.
+```
+```
 visopsys: https://visopsys.org/. def way too encapsulated but the system is nice so I look once in a while to get ideas.
-soso: https://github.com/ozkl/soso. 
+```
+```
+soso: https://github.com/ozkl/soso.
+```
 
 
 
