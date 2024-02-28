@@ -19,12 +19,12 @@ Since I dont know how to set the make file up for folder switching, you will hav
 
 ## TODO
 - Multitasking with events and threads
-- Paging
+- Sadule - Paging
 - Core Mode (runs in ring0) and User Mode (runs in ring3) are separated
 - File System
 - System calls
 - mmap support
-- Framebuffer graphics extended
+- Extend the framebuffer graphics
 - Shared memory
 - Serial port
 - PS/2 mouse
