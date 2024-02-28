@@ -101,6 +101,7 @@ deci - a float - a decimaled number
 decii - double
 deciii - double double
 deciv - 4 doubles
+hold - variable - hold is short for placeholder and thats all a variable is, a placeholder in saml memory, for some data.
 table - array
 pare - bool
 tripare - new kind of bool
