@@ -28,7 +28,7 @@ when using vaml and when we get to the point where we moving pages between ram (
 When we are talking about paging saml to raml, we can say we are using the standard memory layout. If virtual memory is being used, then we are no longer
 using the standard memory layout, and now using the extended memory layout. This helps clarify what part of memory is being worked on or the stage its at.
 If we are implementing paging but have not yet added vaml then we are working on standard memory layout then when we get to the point of adding vaml then
-we have started using the the extented memory layout. Least it provides a method to understand where we actually are.
+we have started using the the extended memory layout. Least it provides some method of understanding to know where we actually are.
 
 sadule - (sa-dule) - standard address module. A sadule replaces the word page and has saml addresses. sadule directory, sadule_index, sadule, saml addresses.
 These sadules with saml addresses get assigned to addules with raml addresses on a one to one basis.
@@ -45,11 +45,10 @@ elements - elements can be either children to the main frame or to the sub frame
 In elle we have a frame manager. The frame manager manages the frames and its child elements along with the code behind and input sequences of those elements.
 
 Archive Filing System (AFS) - an old library like filing system of cards. The roots are archives, directorys that are not roots are catalogs, and everything
-else is a card. We would say that a file is a file card, binary is a module card, and devices are device cards that can be accessed. Every card has a index_tag
-instead of a fd or handle. Every card has a label_index_tag which consists of card traits and not attributes.
+else is a card. We would say that a file is a file card, binary is a module card, and devices are device cards that can be accessed. Every card has a index_tag instead of a fd or handle. Every card has a label_index_tag which consists of card traits not attributes.
 
 If we have to get inspiration and ideas from the other os's then a more linux like filing system and terminal would be best for the afs and the terminal 
-then a more windows like gui system for graphics. 
+then/and a more windows like gui system for the graphics side of things without all the heavy encapsulation. 
 
 I would actually like to figure out how to make my own filing system so that I can use .elm files. (Executable Linked Modules). Where all lib and 
 binary file cards are .mod file cards until they get linked into an .elm file card. The .elm module card is the executable program.
@@ -77,15 +76,15 @@ is more then a 2 chain workflow then we ref the middle subservers as 1 and 2. se
 
 
 When it comes to hardware abstraction we look at it like a distribution hub or building where one side takes in importing/input and the other side sends 
-out exporting/output. We connect up to docks, we send info into a dock and send info out through the dock/s. 
+out exporting/output. We connect up to docks, we send info into a dock and send info out through a dock/s. 
 
 Since we are using the word dock here, that means we can no longer use it for a ui docking system, so will have to come up with a new term like port 
 system for ui or something along those lines.
 
 If we have cards and cards will allow us to use devices, then this would be called a hard dock connection, and if we find a way to connect to software 
-through a means of card, then it would be called a soft dock connection. Where we have a hardware interface hub and a software interface hub and we simply
-connect to the proper dock for input and output. Furthurmore we treat all buses the same way. Where a connection to and from is a dock and it is just an 
-interface hub to something else.
+through a means of card(system calls??), then it would be called a soft dock connection. Where we have a hardware interface hub and a software interface
+hub and we simply connect to the proper dock for input and output. Furthurmore we treat all buses the same way. Where a connection to and from is a dock
+and it is just an interface hub to something else.
 
 At some point I will port my language Illeshian and compiler, if Elle ever gets to that point, so these are terms that come from that:
 mark - char 
@@ -110,3 +109,6 @@ list - enum
 manager - first class function - no relation to oop classes only a heirachy reference to functions.
 function - second class function - no relation to oop classes only a heirachy reference to functions.
 call - calls a manager or function
+
+You might see some refs to them. At this point they have become so second natured to me. Least I have provided some refs here so your not completly 
+thrown off. I know some terminolgy up top seems weird but after a while you get use to them and they really do make alot more sense.
