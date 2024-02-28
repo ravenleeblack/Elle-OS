@@ -27,7 +27,8 @@ addule - (ad-dule) - address module. replaces frames in phyical memory. So we ha
 
 
 When it comes to ui the desktop is a main frame and a program window is a sub frame. All other ui elements are elements.
-main_frame - The main frame is the desktop. It has an empty or nulled parent. If support for multiple monitors later or virtual desktops then they become siblings to the main frame and not children.
+main_frame - The main frame is the desktop. It has an empty or nulled parent. If support for multiple monitors later or virtual desktops then they become 
+siblings to the main frame and not children.
 subframe -  A program window. It is also a child to the main frame or the main frames sibling/s.
 elements - elements can be both children of the main frame and the sub frame.
 
