@@ -18,7 +18,7 @@ Currently have to pull all the files into the main folder to use the makefile si
 ## IMPLEMENTED 
 - Bootloader loads the core without relying on a file system.
 - Switches to graphical mode.
-- A few framebuffer functions to write a mark, strand, or hex to screen using pixels.
+- A few functions to write a mark, strand, or hex to screen using pixels.
 - A few functions to draw elements onto screen using pixels.
 - A few functions to color the foreground and background of text and elements.
 
