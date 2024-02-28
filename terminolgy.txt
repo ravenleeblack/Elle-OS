@@ -124,7 +124,7 @@ data - data is just some kind of value.
 data info - data info is the information about that data, it is not to be confused with data itself, because it does not contain any real value.
 data types - data types are the available types the data could or can be.
 data tools - data tools are the tools used to manipulate the data to do something.
-data modifiers - data modifiers modify the data but are not really a data tool themselves. (more of a keyword tool).
+data modifiers - data modifiers modify the data but are not really a data tool themselves. (more of a keyword).
 
 You might see some refs to them. At this point they have become so second natured to me. Least I have provided some refs here so your not completly 
 thrown off. I know some terminolgy up top seems weird but after a while you get use to them and they really do make alot more sense.
