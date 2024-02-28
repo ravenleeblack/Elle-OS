@@ -23,12 +23,15 @@ Currently have to pull all the files into the main folder to use the makefile si
 - A few functions to color the foreground and background of text and elements.
 
 ## TODO
+- Revert back and build a proper boot menu in nasm. I left the text mode code.
+- Figure out how to properly set the vesa mode without hard coding it and get the infomation needed from vesa to use in c from nasm.
+- Interrupts are shaky right now. So properly set up interrupts. Close to getting the keyboard working right.
 - Multitasking with events and threads
 - Sadule - Paging
 - Core Mode (runs in ring0) and User Mode (runs in ring3) are separated
 - File System
 - System calls
-- mmap support
+- Mmap support
 - Extend the framebuffer graphics
 - Shared memory
 - Serial port
