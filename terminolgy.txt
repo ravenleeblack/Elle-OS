@@ -77,7 +77,7 @@ is more then a 2 chain workflow then we ref the middle subservers as 1 and 2. se
 
 
 When it comes to hardware abstraction we look at it like a distribution hub or building where one side takes in importing/input and the other side sends 
-out exporting/output. We connect up to docks, we send info into a dock and send info out thorugh the dock/s. 
+out exporting/output. We connect up to docks, we send info into a dock and send info out through the dock/s. 
 
 Since we are using the word dock here, that means we can no longer use it for a ui docking system, so will have to come up with a new term like port 
 system for ui or something along those lines.
