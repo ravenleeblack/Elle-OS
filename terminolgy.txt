@@ -30,7 +30,7 @@ When it comes to ui the desktop is a main frame and a program window is a sub fr
 main_frame - The main frame is the desktop. It has an empty or nulled parent. If support for multiple monitors later or virtual desktops then they become 
 siblings to the main frame and not children.
 subframe -  A program window. It is also a child to the main frame or the main frames sibling/s.
-elements - elements can be both children of the main frame and the sub frame.
+elements - elements can be either children to the main frame or to the sub frame.
 
 In elle we have a frame manager. The frame manager manages the frames and its child elements along with the code behind and input sequences of those elements.
 
