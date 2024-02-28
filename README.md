@@ -8,7 +8,7 @@ Currently its does nothing but show some vesa graphics on the screen. I wasnt re
 So I wrote some functions, to at least, start testing stuff and start using the framebuffer without vesa's functions.
 
 
-Currently have to pull all the files into the main folder to use the makfile since I dont know how to make it switch folders, or you can rewrite the make file.
+Currently have to pull all the files into the main folder to use the makefile since I dont know how to make it switch folders, or you can rewrite the make file.
 
 
 
