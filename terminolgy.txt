@@ -1,7 +1,7 @@
 In Elle I want to rename some things. I told you this was an unusal os. Whats the point of building an os if you cant change things to the 
 way you want and understand. This area is for explaining some things, as well as, present ideas or understanding.
 
-core - replaces the name kernel. This isnt popcorn. Would like a core that allows us to remove and replace core system modules.
+core - replaces the name kernel. This isnt popcorn. Would like a core that allows us to remove and replace system modules that connect to core.
 event/s - replaces process - An event is a program in execution.
 thread/s - remains same - A thread begins or starts an event into execution and remains as it runs?
 
