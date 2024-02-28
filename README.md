@@ -14,7 +14,7 @@ Since I dont know how to set the make file up for folder switching, you will hav
 
 
 
-
+`rgb(9, 105, 218)`
 current os inspirations:  
 
 base kernel: https://github.com/dthain/basekernel. It has some clean code in most parts and a really nice system call system
