@@ -13,6 +13,10 @@ better and simpler understanding at least.
 lock_gate - replaces mutexes if used
 guide/s - replace semaphores if used
 
+request/s - replace the name irq - you request an interrrupt.
+service/s - replaces name isr - the interrupt provides the service of what you requested.
+interrupt hub - replaces the name pic - 
+
 passage - standard input and output
 vine passage - replaces pipe - there will be an external and internal vine. Where the external vine is the communication between the server and the 
 subserver while the internal vine is the communication between the subserver and the client.
