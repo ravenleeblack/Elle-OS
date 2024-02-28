@@ -114,9 +114,17 @@ loop - while - as long as the expression or condition is true we loop another it
 set - for loop - a set loop, sets a numbered amount of iterations or cycles, based on condition.
 log - struct - stands for a datalog
 list - enum
-manager - first class function - no relation to oop classes only a heirachy reference to functions.
-function - second class function - no relation to oop classes only a heirachy reference to functions.
+manager - first class function - no relation to oop classes only a heirachy reference to functions. The manager may allow all data tools into the 
+manager except for other managers. You may write as many second class functions or data tools into the the first class function manager.
+function - second class function - no relation to oop classes only a heirachy reference to functions. A function may allow all data tools into a 
+function except for managers and other functions. I do not support closures.
 call - calls a manager or function
+
+data - data is just some kind of value.
+data info - data info is the information about that data, it is not to be confused with data itself, because it does not contain any real value.
+data types - data types are the available types the data could or can be.
+data tools - data tools are the tools used to manipulate the data to do something.
+data modifiers - data modifiers modify the data but are not really a data tool themselves. (more of a keyword tool).
 
 You might see some refs to them. At this point they have become so second natured to me. Least I have provided some refs here so your not completly 
 thrown off. I know some terminolgy up top seems weird but after a while you get use to them and they really do make alot more sense.
