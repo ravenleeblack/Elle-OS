@@ -1,20 +1,26 @@
-In Elle I want to rename some things. I told you this was an unusal os. Whats the point of building an os if you cant change things to the way you want and understand.
+In Elle I want to rename some things. I told you this was an unusal os. Whats the point of building an os if you cant change things to the 
+way you want and understand.
 
 core - replaces the name kernel. This isnt popcorn.
 event - replaces process - A program in execution.
 thread - remains same - A program that runs an event in execution.
-sequence - replaces the old event for mouse and keyboard. We would say mouse or keyboard input sequence/s. Had to change this since I used event for processes and it would be confusing if left the same.
+sequence - replaces the old event for mouse and keyboard. We would say mouse or keyboard input sequence/s. Had to change this since I used 
+event for processes and it would be confusing if left the same.
 
 passage - standard input and output
 vine passage - replaces pipe - there will be an external and internal vine.
 
 raml - (ra-mule) - real address memory locations. This gives a more direct name to phyical addresses. raml address, raml addresses
-saml - (sam-mule) - standard address memory locations. This gives a more direct name to memory allocated by the cpu, the same memory that gets paged to a frame address by address. 
+saml - (sam-mule) - standard address memory locations. This gives a more direct name to memory allocated by the cpu, the same memory that gets
+paged to a frame address by address. 
 
 vaml - (va-mule) - virtual address memory locations. This gives a more direct name for virtual addresses.
-daml - (da-mule) - device address memory locations. Under normal circumstances this would still be phyical addresses or raml but in order to be clear about what addresses we are using, we just use daml, when it comes to ring drives - hard and floppy drives. This helps prevent any confusion when using vaml and when we get to the point where we moving pages between ram (raml) and hardware (daml).
+daml - (da-mule) - device address memory locations. Under normal circumstances this would still be phyical addresses or raml but in order to be
+clear about what addresses we are using, we just use daml, when it comes to ring drives - hard and floppy drives. This helps prevent any confusion
+when using vaml and when we get to the point where we moving pages between ram (raml) and hardware (daml).
 
-When we are talking about paging saml to raml, we say we are using the standard memory layout. If virtual memory is being used, then we are no longer using the standard memory layout, and now using the extended memory layout.
+When we are talking about paging saml to raml, we say we are using the standard memory layout. If virtual memory is being used, then we are no longer
+using the standard memory layout, and now using the extended memory layout.
 
 sadule - (sa-dule) - standard address module. A sadule replaces the word page and has saml addresses. sadule directory, sadule_index, sadule, saml addresses
 addule - (ad-dule) - address module. replaces frames in phyical memory. So we have addules that contain raml addresses.
