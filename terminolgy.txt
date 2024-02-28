@@ -107,10 +107,10 @@ pare - bool
 tripare - new kind of bool
 check - if - we check the expression or condition
 else - else
-compare - switch - we compare the expression or condition, to the avail line option, otherwise we do something else
+compare - switch - we compare the expression or condition, to a line option, otherwise we do something else
 line - case
 other - default
-loop - while - as long as the expression or condition is true we loop
+loop - while - as long as the expression or condition is true we loop another iteration or cycle.
 set - for loop - a set loop, sets a numbered amount of iterations or cycles, based on condition.
 log - struct - stands for a datalog
 list - enum
