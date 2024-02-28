@@ -5,7 +5,6 @@
 #include "memory.h"
 #include "color.h"
 #include "core_malloc.h"
-#include "sequence.h"
 #include "terminal.h"
 
 //When using bochs if its not displaying all the pixels of the screen, you need more memory, so 0xE0000000 is bochs address for the framebuffer. Use until paging is done and we can create our own fb address.
