@@ -2,9 +2,11 @@
 
 I have been programming for quite a few years in pure c and nasm. I have most of a compiler finished, for my own language Illeshian, without any tools so it was no surprise when my interest delved deeper and I found the love of os development. What can I say, I like a challenge, and I inspire to be like the original old school programmers who knew their stuff really well. 
 
-I would like to start Elle out being being a 32-bit multitasking os. I am not looking to make a windows or linux clone nor do I want to port their tools into this os. I am having fun designing what I can without tools. Currently its does nothing but show some vesa graphics on the screen. I wasnt realy trying to be the graphics first guy but it turned out to be easier then alot of other things. So I wrote some functions, to at least, start testing stuff and using the framebuffer without vesa's functions.
+I would like to start Elle out being being a 32-bit multitasking os. I am not looking to make a windows or linux clone nor do I want to port their tools into this os. I am having fun designing what I can without tools. Currently its does nothing but show some vesa graphics on the screen. I wasnt really trying to be the graphics first guy but it turned out to be easier then alot of other things. So I wrote some functions, to at least, start testing stuff and start using the framebuffer without vesa's functions.
 
-The bootloader currently loads the core up without being dependent on a file system to do it. I do have text mode code available because I want to return and eventually make a proper bootloader menu and maybe one day my own version of uefi without a PE or ELF file. The interrupt system is shaky but I think I am close to getting the keyboard to work. Which is needed to start a terminal since there is graphics involved and I suppose a good place to start. Since I dont know how to set the make file up for folder switching you will have to pull all the files into the main folder to use. Ill get there.
+The bootloader currently loads the core up without being dependent on a file system to do it. The interrupt system is shaky but I think I am close to getting the keyboard to work. Which is needed to start a terminal. Since there is graphics involved I suppose thats a good place to start. A nice graphical terminal. 
+
+Since I dont know how to set the make file up for folder switching, you will have to pull all the files into the main folder to use, or rewrite the make file. Ill get there.
 
 
 
@@ -23,7 +25,7 @@ visopsys: https://visopsys.org/. def way too encapsulated but the system is nice
 soso: https://github.com/ozkl/soso.
 
 
-
+Feel free to reach out. Any help or contributions would be much appreciated, not only in code, but email as well.
 
 
 
