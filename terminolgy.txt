@@ -26,7 +26,9 @@ clear about what addresses we are using, we just use daml, when it comes to ring
 when using vaml and when we get to the point where we moving pages between ram (raml) and hardware (daml).
 
 When we are talking about paging saml to raml, we can say we are using the standard memory layout. If virtual memory is being used, then we are no longer
-using the standard memory layout, and now using the extended memory layout.
+using the standard memory layout, and now using the extended memory layout. This helps clarify what part of memory is being worked on or the stage its at.
+If we are implementing paging but have not yet added vaml then we are working on standard memory layout then when we get to the point of adding vaml then
+we have started using the the extented memory layout. Least it provides a method to understand where we actually are.
 
 sadule - (sa-dule) - standard address module. A sadule replaces the word page and has saml addresses. sadule directory, sadule_index, sadule, saml addresses.
 These sadules with saml addresses get assigned to addules with raml addresses on a one to one basis.
