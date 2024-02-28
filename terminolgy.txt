@@ -1,0 +1,44 @@
+In Elle I want to rename some things. I told you this was an unusal os. Whats the point of building an os if you cant change things to the way you want and understand.
+
+event - replaces process - A program in execution.
+thread - remains same - A program that runs an event in execution.
+sequence - replaces the old event for mouse and keyboard. We would say mouse or keyboard input sequence/s. Had to change this since I used event for processes and it would be confusing if left the same.
+
+passage - standard input and output
+vine passage - replaces pipe - there will be an external and internal vine.
+
+raml - (ra-mule) - real address memory locations. This gives a more direct name to phyical addresses. raml address, raml addresses
+saml - (sam-mule) - standard address memory locations. This gives a more direct name to memory allocated by the cpu, the same memory that gets paged to a frame address by address. 
+
+vaml - (va-mule) - virtual address memory locations. This gives a more direct name for virtual addresses.
+daml - (da-mule) - device address memory locations. Understand normal circumstances this would still be phyical addresses and could be considered raml but in order to be clear about what addresses 
+we are using, we just use daml, when it comes to devices such as hard and floppy drives. This helps prevent any confusion when using vaml and when we get to the point where we allocate pages between ram (raml)
+and hardware (daml).
+
+When we are talking about paging saml to raml then this would be the standard memory layout. If virtual memory is being used then we are no longer using the standard memory layout and now using the 
+extended memory layout.
+
+sadule - (sa-dule) - standard address module. replaces the paging system where a sadule is a page with saml addresses. sadule directory, sadule_index, sadule, saml addresses
+addule - (ad-dule) - address module. replaces frames in phyical memory. So we have addules that contain raml addresses.
+
+Archive Filing System (AFS) - a filing system like an old library. The roots are archives, directorys are catalogs, and everything else is a card. We would say a file card for files and we would say a
+device card when accessing devices.
+
+If we have to get inspiration and ideas from the other guys then a more linux like filing system and terminal would be best and a more windows like for graphics. 
+
+I would actually like to figure out how to make our own filing system so that we can use .elm files. (Executable Linked Modules). Where all libraries and binarys are .mod files until they get linked into 
+an .elm file.
+
+system units
+While everything in the system is a card there are always alternative names for unit/s. Especially when it comes to abstract vs concrete.
+
+Type                            Unit Type
+data                            component/s
+ui                              element/s
+model                           object          //The only time the word object is used in elle is when refering to 3d models
+
+file                            file card
+binary                          module card
+device                          device card
+
+
