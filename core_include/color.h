@@ -32,3 +32,4 @@ extern struct color_element color_orange;
 extern struct color_element color_teal;
 extern struct color_element color_slate;
 
+#endif
