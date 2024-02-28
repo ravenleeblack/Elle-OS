@@ -12,6 +12,7 @@ With this we can say that one points to the buffer while the other is the pos fr
 
 If presented with the problem: I would rather have a enums list then an array list. Since an enum list is more clear on whats going on then an array sometimes. 
 
+When it comes to the make file. I would prefer it if you kept it to where the file names still show. I cant stand an overly wildcarded make. I get some of you are linux born and bred but it makes no sense readability wise to me.
 
 Minimal to almost no encapsulation. I would rather have to, use more functions and take structs as args, then have overly encapsulated code that relys on everything else to work. Since the idea is 
 to get it where we can switch out system modules connected to the core. The less encapsulation the better. If everything is reliant on everything then it would be heck trying to switch out a newer 
