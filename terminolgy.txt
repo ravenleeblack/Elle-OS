@@ -60,4 +60,7 @@ In a server/client enviroment: Its typically a chained enviroment where the real
 itself to user mode which is a client. Under this circunstance we would say that we have a server for the server, a subserver for your os, and user 
 mode is a client. This will help clarify which part of the chain we are talking about when we have a server, sub-server, client work flow. The only 
 change here is we are creating a new word for the middle so we are not directly saying either server or client for the middle when trying to explain
-something in the work flow of everything. This helps eliminate confusion and we still know that the middle can be or is either a server or a client.
+something in the work flow of everything. This helps eliminate confusion and we still know that the middle can be or is a server or a client.
+
+
+
