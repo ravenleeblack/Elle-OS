@@ -14,8 +14,8 @@ Since I dont know how to set the make file up for folder switching, you will hav
 
 
 ## IMPLEMENTED 
-- Bootloader that loads core without dependent file system
-- Minimum framebuffer functions
+- Bootloader loads the core without relying on a file system
+- There are minimum framebuffer functions to draw or write a mark, strand, or hex.
 
 ## TODO
 - Multitasking with events and threads
