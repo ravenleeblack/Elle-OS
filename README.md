@@ -5,7 +5,7 @@ I have been programming for quite a few years in pure c and nasm. I have most of
 Elle is a 32-bit Operating System. Im not looking to make a windows or linux clone, nor do I want to port their tools, into this os. I am having fun designing what I can without tools. 
 
 Currently its does nothing but show some vesa graphics on the screen. I wasnt really trying to be the graphics first guy but it turned out to be easier then alot of other things.
-So I wrote some functions, to at least, start testing stuff and start using the framebuffer without vesa's functions.
+So I wrote some functions, to at least, start testing stuff and start using the framebuffer without using the actual vesa's functions.
 
 
 Currently have to pull all the files into the main folder to use the makefile since I dont know how to make it switch folders, or you can rewrite the make file.
