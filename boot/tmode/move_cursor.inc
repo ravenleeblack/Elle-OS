@@ -1,5 +1,3 @@
-; move_cursor.inc
-
 show_cursor:
 	pusha
 	mov ch, 6
@@ -14,17 +12,8 @@ hide_cursor:
 	pusha
 	mov ch, 32
 	mov ah, 1
-	mov al, 3			; Must be video mode for buggy BIOSes!
+	mov al, 3			
 	int 10h
-	popa
-	ret
-
-os_move_cursor:
-	pusha
-	mov bh, 0
-	mov ah, 2
-	int 10h				         ; BIOS interrupt to move cursor
-
 	popa
 	ret
 
