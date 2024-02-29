@@ -67,6 +67,7 @@ user_mode_code_seg equ user_mode_code - gdt_start                ; Offset for us
 user_mode_hold_seg equ user_mode_hold - gdt_start                ; Offset for user mode data segment
 user_mode_stack_seg equ user_mode_stack - gdt_start              ; Offset for user mode stack segment
 
+; There are two modes: core mode and user mode.
 ; may need to create a tss segment descriptor in order to set it up for the min. Still not sure yet on that??
 
 flush_gdt:
