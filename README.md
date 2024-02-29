@@ -7,11 +7,9 @@ Elle is a 32-bit Operating System. Im not looking to make a windows or linux clo
 Currently its does nothing but show some vesa graphics on the screen. I wasnt really trying to be the graphics first guy but it turned out to be easier then alot of other things.
 So I wrote some functions, to at least, start testing stuff and start using the framebuffer without using the actual vesa's functions.
 
-Right now I kind of have my ideas and terms in the wiki so check it out to learn more. I suppose I better find a better way to express my thoughts on there.
-
-Currently have to pull all the files into the main folder to use the makefile since I dont know how to make it switch folders, or you can rewrite the make file.
-
 core.c is the main file and the entry point to the core.
+
+Currently have to pull all the files into the main folder to use the makefile since I dont know how to make it switch folders, or you can rewrite the make file. I just recently started using the wsl2.
 
 ![elle_os](https://github.com/ravenleeblack/Elle-OS/assets/76606152/62338810-4413-47a3-a214-1c31e8296587)
 
@@ -41,16 +39,16 @@ core.c is the main file and the entry point to the core.
 
 
 current os inspirations:  
-
+```
 base kernel: https://github.com/dthain/basekernel. It has some clean code in most parts and a really nice system call system
 even doe its overly encapsulated on everything and assembly is in gas.
 
 visopsys: https://visopsys.org/. def way too encapsulated but the system is nice so I look once in a while to get inspired.
 
 soso: https://github.com/ozkl/soso.
+```
 
-
-Feel free to reach out. Any help, explanations, or contributions would be much appreciated, not only in code, but in email as well.
+I have ideas in the wiki. Still working on making it look nicer and getting my thoughts collected. Feel free to reach out. Any help, explanations, or contributions would be much appreciated, not only in the code, but in the discussions tab or email as well.
 
 
 
