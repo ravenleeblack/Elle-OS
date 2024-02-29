@@ -4,8 +4,6 @@ All function names in c and all label names in nasm must be lowercase.
 All names must be seperated by using a underscore before or between the names depending on the circumstance. 
 All variables names must have a descriptive name.
 
-If possible put all comments to the right of what you are explaining as if its nasm comments both in c and nasm. Unless it becomes too long then we have no choice but to put the comments overhead.
-
 If a pointer is pointing to a pos in the buffer and gets incremented then its a name, underscore, pos. ex mark_pos.
 Otherwise if its just a pointer to the base, then it would be name, underscore, ptr, because it just points to the buffer. ex mark_ptr.
 With this we can say that one points to the buffer while the other is the pos from the base.
