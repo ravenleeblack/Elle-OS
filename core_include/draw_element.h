@@ -7,8 +7,6 @@
 #include "core_malloc.h"
 #include "terminal.h"
 
-//When using bochs if its not displaying all the pixels of the screen, you need more memory, so 0xE0000000 is bochs address for the framebuffer. Use until paging is done and we can create our own fb address.
-// below is hard coded. screen_width and screen_height need to to properly get the vesa infomation from the bootloader so these defines can be dynamic and change modes properly.
 #define video_memory 0xE0000000  
 #define screen_width 1440
 #define screen_height 900
@@ -20,36 +18,36 @@
 
 struct rect_element
 {
-	aisle x_rect_pos;
-	aisle y_rect_pos;
-	aisle w_rect_pos;
-	aisle h_rect_pos;
+    aisle x_rect_pos;
+    aisle y_rect_pos;
+    aisle w_rect_pos;
+    aisle h_rect_pos;
 };
 
 struct clip_element
 {
-	aisle x_clip_pos;
-	aisle y_clip_pos;
-	aisle w_clip_pos;
-	aisle h_clip_pos;
+    aisle x_clip_pos;
+    aisle y_clip_pos;
+    aisle w_clip_pos;
+    aisle h_clip_pos;
 };
 
 struct draw_element
 {
-	char term_buffer[terminal_height][terminal_width]; // Buffer for terminal content
-	int cursor_x; // Cursor position
-	int cursor_y;
+    char term_buffer[terminal_height][terminal_width];    // Buffer for terminal content
+    int cursor_x;                                          // Cursor position
+    int cursor_y;
 
-	struct bitmap_element *bitmap;
-	struct color_element element_fore_color;
-	struct color_element element_back_color;
+    struct bitmap_element *bitmap;
+    struct color_element element_fore_color;
+    struct color_element element_back_color;
 
-	struct clip_element clip;
-	struct rect_element rect;
-	struct draw_element *parent;
-	struct draw_element *child;               // Pointer to the first child element
-	struct draw_element *next_sibling;        // Pointer to the next sibling element
-	int element_instance;
+    struct clip_element clip;
+    struct rect_element rect;
+    struct draw_element *parent;
+    struct draw_element *child;               // Pointer to the first child element
+    struct draw_element *next_sibling;        // Pointer to the next sibling element
+    int element_instance;
 };
 
 
