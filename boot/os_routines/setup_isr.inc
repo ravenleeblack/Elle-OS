@@ -1,11 +1,8 @@
-
-  ;	lidt [idt_ptr]
-
 global idt_load
 extern idt_selector_ptr
 idt_load:
-    lidt 	[idt_selector_ptr]
-    ret
+    lidt [idt_selector_ptr]              ; load the interrupt table
+    ret                                  ; return back to our c code
 
 
 global handle_asm_request
@@ -314,77 +311,77 @@ req_sys_call:
 
 
 
-handle_asm_service:
+handle_asm_service:                                            
     pusha
-    push 	ds
-    push 	es
-    push 	fs
-    push 	gs
-    mov 	ax, 0x10   					; Load the Kernel Data Segment descriptor!
-    mov 	ds, ax
-    mov 	es, ax
-    mov 	fs, ax
-    mov 	gs, ax
-    mov 	eax, esp   					; Push us the stack
-    push 	eax
-    mov 	eax, handle_core_service
-    call 	eax       					; A special call, preserves the 'eip' register
-    pop 	eax
-    pop 	gs
-    pop 	fs
-    pop 	es
-    pop 	ds
+    push  ds
+    push  es
+    push  fs
+    push  gs
+    mov   ax, 0x10   					
+    mov   ds, ax
+    mov   es, ax
+    mov   fs, ax
+    mov   gs, ax
+    mov   eax, esp   					
+    push  eax
+    mov   eax, handle_core_service
+    call  eax       					
+    pop   eax
+    pop   gs
+    pop   fs
+    pop   es
+    pop   ds
     popa
-    add 	esp, 8     					; Cleans up the pushed error code and pushed ISR number
-    iret           						; pops 5 things at once: CS, EIP, EFLAGS, SS, and ESP!
+    add   esp, 8     					
+    iret           						
 
 handle_asm_request:
     pusha
-    push 	ds
-    push 	es
-    push 	fs
-    push 	gs
-    mov 	ax, 0x10
-    mov 	ds, ax
-    mov 	es, ax
-    mov 	fs, ax
-    mov 	gs, ax
-    mov 	eax, esp
-    push 	eax
-    mov 	eax, handle_core_request
-    call 	eax
-    pop 	eax
-    pop 	gs
-    pop 	fs
-    pop 	es
-    pop 	ds
+    push  ds
+    push  es
+    push  fs
+    push  gs
+    mov   ax, 0x10
+    mov   ds, ax
+    mov   es, ax
+    mov   fs, ax
+    mov   gs, ax
+    mov   eax, esp
+    push  eax
+    mov   eax, handle_core_request
+    call  eax
+    pop   eax
+    pop   gs
+    pop   fs
+    pop   es
+    pop   ds
     popa
-    add 	esp, 8
+    add   esp, 8
     iret
 
 
 handle_asm_system_call:
-    pushad                        ; Push general registers
-    push ds                       ; Push segment registers
+    pushad                       
+    push ds                       
     push es
     push fs
     push gs
-    mov ax, 0x10                   ; Switch to kernel data segment and extra segment
+    mov ax, 0x10                  
     mov ds, ax
     mov es, ax
-	mov fs, ax
+    mov fs, ax
     mov gs, ax
-	mov eax, esp
+    mov eax, esp
     push eax
-	mov eax, handle_core_system_call
+    mov eax, handle_core_system_call
     call eax
-	pop eax
-    pop gs                        ; Restore segment registers
+    pop eax
+    pop gs                       
     pop fs
     pop es
     pop ds
-    popad                         ; Restore general registers
-	add esp, 8                    ; Remove interrupt number and code from stack
+    popad                         
+    add esp, 8                   
     pop ebx
     pop ecx
     pop edx
@@ -395,10 +392,9 @@ handle_asm_system_call:
     pop fs
     pop es
     pop ds
-    add esp, 4    ; remove interrupt num
-    add esp, 4    ; remove detail code
-    iret          ; iret gets the intr context
-
+    add esp, 4   
+    add esp, 4    
+    iret         
 
 syscall:
     push ebp
@@ -425,14 +421,7 @@ syscall:
     leave
     ret
 
-
 flush_idt:
-    mov eax, [esp+4] ;[esp+4] is the parametered passed
+    mov eax, [esp+4]       ;[esp+4] is the parametered passed
     lidt [eax]
-    ret
-
-flush_tss:
-    mov ax, 0x2B ;index of the TSS structure is 0x28 (5*8) and OR'ing two bits in order to set RPL 3 and we get 0x2B
-
-    ltr ax
     ret
