@@ -5,13 +5,11 @@ global vbe_info
 global _get_vbe_info
 
 _set_gmode_system:
-    mov ax, 4F02h   ; VESA BIOS call to set graphics mode
-    mov bx, 980h    ; Mode 100h corresponds to 1440x900x32bpp
-    int 10h         ; Call BIOS interrupt 10h to set the mode
+    mov ax, 4F02h            ; vesa mode bios call to set the graphics mode
+    mov bx, 980h             ; mode 980h corresponds to 1440x900x32bpp
+    int 10h                  ; call bios interrupt 10h to set the mode
+    ret                      ; return back to osload when finished
 
-
-    ; Return
-    ret
-
-;need to properly set up the labels to set multiples modes and get the right infomation instead of hard coding it. There are some defines in the c code we
-;need to use to get the right mode size from here so our screen is right.
+; need to properly set up the label to handle multiples modes and get the right infomation instead of hard coding it. There are some defines in the c code we
+; are using to get the screen width and height. Right now they are hard coded but we need to be able to get the vesa info from here and update them properly 
+; when the screen size changes.
