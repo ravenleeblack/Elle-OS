@@ -24,15 +24,15 @@ Currently have to pull all the files into the main folder to use the makefile si
 ## TODO
 - Revert back and build a proper boot menu in nasm. I left the text mode code.
 - Figure out how to properly set the vesa mode without hard coding it and get the infomation needed from vesa to use in c from nasm.
-- Interrupts are shaky right now. So properly set up interrupts. Close to getting the keyboard working right.
+- Fix Interrupt System.  The interruptss are shaky right now. Close to getting the keyboard working right.
 - Multitasking with events and threads
 - Sadule - Paging
-- Core Mode (runs in ring0) and User Mode (runs in ring3) are separated
-- File System
+- Core Mode seperated from User Mode
+- Archive Filing System (AFS)
+- Root Archive seperated from Home Archive
 - System calls
-- Mmap support
+- Memory map support
 - Extend the framebuffer graphics
-- Shared memory
 - Serial port
 - PS/2 mouse
 - Terminal
@@ -40,10 +40,9 @@ Currently have to pull all the files into the main folder to use the makefile si
 
 current os inspirations:  
 - base kernel: https://github.com/dthain/basekernel. It has some clean code in most parts and a really nice system call system
-even doe its overly encapsulated on everything and assembly is in gas.
+  even doe its overly encapsulated on everything and assembly is in gas.
 - visopsys: https://visopsys.org/. def way too encapsulated but the system is nice so I look once in a while to get inspired.
 - soso: https://github.com/ozkl/soso.
-
 
 I have ideas in the wiki. Still working on making it look nicer and getting my thoughts collected. Feel free to reach out. Any help, explanations, or contributions would be much appreciated, not only in the code, but in the discussions tab or email as well.
 
