@@ -57,14 +57,11 @@ frame_bitmap.o: frame_bitmap.c
 terminal.o: terminal.c
 	gcc -m32 -fno-pie -Wall -ffreestanding --no-builtin -nostdinc -nostdlib -c terminal.c -o terminal.o
 
-interrupt_hub.o: interrupt_hub.c
-	gcc -m32 -fno-pie -Wall -ffreestanding --no-builtin -nostdinc -nostdlib -c interrupt_hub.c -o interrupt_hub.o
-
 screen.o: screen.c
 	gcc -m32 -fno-pie -Wall -ffreestanding --no-builtin -nostdinc -nostdlib -c screen.c -o screen.o
 
-core.bin: core.o osload.o osboot.o font.o gdt.o idt.o service.o memory.o port_hub.o keyboard.o request.o clock.o core_malloc.o draw_element.o main_frame.o sub_frame.o color.o frame_bitmap.o terminal.o interrupt_hub.o screen.o
-	ld -T link.ld -melf_i386 -o core.elf core.o osload.o osboot.o font.o gdt.o idt.o service.o memory.o port_hub.o keyboard.o request.o clock.o core_malloc.o draw_element.o main_frame.o sub_frame.o color.o frame_bitmap.o terminal.o interrupt_hub.o screen.o
+core.bin: core.o osload.o osboot.o font.o gdt.o idt.o service.o memory.o port_hub.o keyboard.o request.o clock.o core_malloc.o draw_element.o main_frame.o sub_frame.o color.o frame_bitmap.o terminal.o screen.o
+	ld -T link.ld -melf_i386 -o core.elf core.o osload.o osboot.o font.o gdt.o idt.o service.o memory.o port_hub.o keyboard.o request.o clock.o core_malloc.o draw_element.o main_frame.o sub_frame.o color.o frame_bitmap.o terminal.o screen.o
 	objcopy -O binary core.elf core.bin
 
 elle.flp: core.bin	
@@ -72,4 +69,4 @@ elle.flp: core.bin
 	dd if=core.bin of=elle.flp conv=notrunc
 
 clean:
-	rm -f osboot.o osload.o core.o load_core.o core.bin elle.flp core.elf font.o gdt.o idt.o service.o memory.o port_hub.o keyboard.o request.o clock.o core_malloc.o draw_element.o main_frame.o sub_frame.o color.o frame_bitmap.o terminal.o interrupt_hub.o screen.o
+	rm -f osboot.o osload.o core.o load_core.o core.bin elle.flp core.elf font.o gdt.o idt.o service.o memory.o port_hub.o keyboard.o request.o clock.o core_malloc.o draw_element.o main_frame.o sub_frame.o color.o frame_bitmap.o terminal.o screen.o
