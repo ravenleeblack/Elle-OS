@@ -38,6 +38,8 @@ Currently have to pull all the files into the main folder to use the makefile si
 - PS/2 mouse
 - Terminal
 
+In the wiki I have some new termnology and ideas so check it out!!!
+
 
 current os inspirations:  
 
