@@ -4,7 +4,7 @@ global osload
 
 osload:  jmp switch_pmode
 
-%include "gmode.asm"
+%include "gmode_system.asm"
 %include "tmode_system.asm"
 
 switch_pmode:
