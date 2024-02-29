@@ -39,14 +39,11 @@ Currently have to pull all the files into the main folder to use the makefile si
 
 
 current os inspirations:  
-```
-base kernel: https://github.com/dthain/basekernel. It has some clean code in most parts and a really nice system call system
+- base kernel: https://github.com/dthain/basekernel. It has some clean code in most parts and a really nice system call system
 even doe its overly encapsulated on everything and assembly is in gas.
+- visopsys: https://visopsys.org/. def way too encapsulated but the system is nice so I look once in a while to get inspired.
+- soso: https://github.com/ozkl/soso.
 
-visopsys: https://visopsys.org/. def way too encapsulated but the system is nice so I look once in a while to get inspired.
-
-soso: https://github.com/ozkl/soso.
-```
 
 I have ideas in the wiki. Still working on making it look nicer and getting my thoughts collected. Feel free to reach out. Any help, explanations, or contributions would be much appreciated, not only in the code, but in the discussions tab or email as well.
 
