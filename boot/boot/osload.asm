@@ -32,7 +32,7 @@ pmode:
     mov fs, ax
     mov gs, ax
 
-    mov ebp, 0xfff0
+    mov ebp, 0xfff0                 ; set up the stack
     mov esp, ebp
 
     [EXTERN _core]
