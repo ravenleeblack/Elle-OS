@@ -1,5 +1,3 @@
-; read_osload.inc
-
 [BITS 16]
 
 read_osload:
