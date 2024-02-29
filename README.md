@@ -7,7 +7,7 @@ Elle is a 32-bit Operating System. Im not looking to make a windows or linux clo
 Currently its does nothing but show some vesa graphics on the screen. I wasnt really trying to be the graphics first guy but it turned out to be easier then alot of other things.
 So I wrote some functions, to at least, start testing stuff and start using the framebuffer without using the actual vesa's functions.
 
-Right now I kind of have mty ideas and terms in the wiki so check it out to learn more. I suppose I better find a better way to express my thoughts on there.
+Right now I kind of have my ideas and terms in the wiki so check it out to learn more. I suppose I better find a better way to express my thoughts on there.
 
 Currently have to pull all the files into the main folder to use the makefile since I dont know how to make it switch folders, or you can rewrite the make file.
 
