@@ -1,5 +1,4 @@
 
-global tss_selector_seg
 global selector_ptr
 [GLOBAL flush_gdt]
 
