@@ -1,6 +1,5 @@
-; draw_block.inc - this file contains drawing functins for ui
 
-draw_main_menu:     ; draw the main option window
+draw_main_menu:        ; draw the main option window
     pusha
     mov ah, 02h        ; Set cursor position function
     mov bh, 0          ; Page number (0 for standard screen)
