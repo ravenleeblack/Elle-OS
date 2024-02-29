@@ -6,8 +6,7 @@ void handle_core_system_call()
 
 }
 
-/* Exception Messages */
-unsigned char *exception_messages[] =
+unsigned char *exception_messages[] =       // Exception Messages
 {
 	"service: arith error: division by zero",
 	"service: debug service",
@@ -43,17 +42,11 @@ unsigned char *exception_messages[] =
 	"service: reserved 12"
 };
 
-
-// This gets called from our ASM interrupt handler stub.
 void handle_core_service(struct registers regs)
 {
-
-	//draw_strand("recieved interrupt: ", 10, 48, 178, 188, 170, 255, 60, 60, 60, 255);
-	//draw_integer(exception_messages[regs.interrupt_index], 10, 50, 178, 188, 170, 255, 98, 100, 95, 255);
-
-	if (handle_interrupt[regs.interrupt_index] != 0)
-	{
-		service handler = handle_interrupt[regs.interrupt_index];
-		handler(regs);
-	}
+     if (handle_interrupt[regs.interrupt_index] != 0)
+     {
+	service handler = handle_interrupt[regs.interrupt_index];
+	handler(regs);
+     }
 }
