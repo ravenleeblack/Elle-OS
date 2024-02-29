@@ -15,7 +15,7 @@ core_mode_code:                ; core mode code segment descriptor
     dw 0xffff
     dw 0
     db 0
-    db 10011010b               ; Access rights byte
+    db 10011010b               
     db 11001111b
     db 0
 
@@ -23,7 +23,7 @@ core_mode_hold:                ; core mode data segment descriptor
     dw 0xffff
     dw 0
     db 0
-    db 10010010b               ; Access rights byte
+    db 10010010b              
     db 11001111b
     db 0
 core_mode_stack:               ; core mode stack segment descriptor
