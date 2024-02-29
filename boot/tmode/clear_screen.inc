@@ -1,8 +1,6 @@
-; clear_screen.inc
 
-
-clear_screen:           ; clear the screen
-    pusha               ; Push all general-purpose registers onto the stack
+clear_screen:            ; clear the screen
+    pusha                ; Push all general-purpose registers onto the stack
 
     mov ah, 09h          ; use a string to clear screen
     mov bh, 0            ; set page to zero
