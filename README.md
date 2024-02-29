@@ -11,7 +11,7 @@ Right now I kind of have my ideas and terms in the wiki so check it out to learn
 
 Currently have to pull all the files into the main folder to use the makefile since I dont know how to make it switch folders, or you can rewrite the make file.
 
-
+core.c is the main file and the entry point to the core.
 
 ![elle_os](https://github.com/ravenleeblack/Elle-OS/assets/76606152/62338810-4413-47a3-a214-1c31e8296587)
 
