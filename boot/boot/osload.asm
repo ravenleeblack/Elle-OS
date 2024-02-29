@@ -10,7 +10,7 @@ osload:  jmp switch_pmode
 switch_pmode:
     call enable_gate                 ; enable a20 gate for additional memory
     call _set_gmode_system           ; set vesa graphics mode so we can use it frame buffer
-    ;call _set_tmode_system	       ; set text mode. Left here so I can return to build a proper bootloader menu later
+    ;call _set_tmode_system	     ; set text mode. Left here so I can return to build a proper bootloader menu later
 
     cli
     lgdt [selector_ptr]              ; load the gdt table
