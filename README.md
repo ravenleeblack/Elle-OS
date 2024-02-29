@@ -2,7 +2,7 @@
 
 I have been programming for quite a few years in pure c and nasm. I have most of a compiler finished, for my own language Illeshian, without any tools so it was no surprise when my interest delved deeper and I found the love of os development. What can I say, I like a challenge, and I inspire to be like the original old school programmers who knew their stuff really well. 
 
-Elle is a 32-bit Operating System. Im not looking to make a windows or linux clone, nor do I want to port their tools, into this os. I am having fun designing what I can without tools. 
+Elle is a 32-bit Operating System. Im not looking to make a windows or linux clone, nor do I want to port their tools, into this os. I am having fun designing what I can without tools. I do inspire to make it a somewhat legit and unique operating system.
 
 Currently its does nothing but show some vesa graphics on the screen. I wasnt really trying to be the graphics first guy but it turned out to be easier then alot of other things.
 So I wrote some functions, to at least, start testing stuff and start using the framebuffer without using the actual vesa's functions.
